@@ -1,7 +1,7 @@
 * {
     font-size: 1rem;
     font-weight: 400;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto-Regular;
     margin: unset;
     padding: unset;
     border: unset;
@@ -16,7 +16,49 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(/resources/Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(/resources/Fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(resources/Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Alegreya-Regular;
+    src: url(/resources/Fonts/Alegreya-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alegreya-Bold;
+    src: url(/resources/Fonts/Alegreya-Bold.ttf);
+}
+
+@font-face {
+    font-family: Alegreya-Black;
+    src: url(/resources/Fonts/Alegreya-Black.ttf);
+}
+
 /* -------------------- Navegador -------------------- */
+header {
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent);
+    width: 100%;
+    padding: 0 30px;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -58,7 +100,7 @@ header nav button {
     background-image: url(/resources/JPG/01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 30px 50px 30px;
+    padding: 100px 30px 50px 30px;
 }
 
 .jumbotron section {
@@ -68,4 +110,65 @@ header nav button {
 .jumbotron h1 {
     font-size: 3.5rem;
     text-align: end;
+    font-family: Alegreya-Bold;
+}
+
+.jumbotron h1 span{
+    font-size: 3.5rem;
+    text-align: end;
+    font-family: Alegreya-Black;
+}
+
+/* -------------------- Recent -------------------- */
+
+.recientes {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 50px 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.recientes h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.recientes__tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #141414;
+    border-radius: 12px;
+    align-items: center;
+    padding: 40px;
+}
+
+.tarjeta img {
+    border-radius: 20px;
+}
+
+.tarjeta__info h4 {
+    font-size: 18px;
+}
+
+.tarjeta__info p {
+    font-size: 12px;
+}
+
+.tarjeta__ranking {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarjeta__ranking__estrellas {
+    display: flex;
 }

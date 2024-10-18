@@ -26,45 +26,47 @@
 <body>
 
     <!--------------------------------- Contenido --------------------------------->
-    <main>
+    <main id="Inicio">
 
         <!--------- Encabezado --------->
+        <header>
+            <nav>
+                <img src="/resources/SVG/Logo.svg" alt="">
+    
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Recientes">Valoradas Recientemente</a></li>
+                    <li><a href="#Registro">Unirse</a></li>
+                </ul>
+    
+                <div>
+                    <button>Ingresar</button>
+                    <button class="button">Registrase</button>
+                </div>
+            </nav>
+        </header>
+
+        <!--------- Jumbotron --------->
         <div class="jumbotron">
-            <header>
-                <nav>
-                    <img src="/resources/SVG/Logo.svg" alt="">
-        
-                    <ul>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="#Recientes">Valoradas Recientemente</a></li>
-                        <li><a href="#Registro">Unirse</a></li>
-                    </ul>
-        
-                    <div>
-                        <button>Ingresar</button>
-                        <button class="button">Registrase</button>
-                    </div>
-                </nav>
-            </header>
 
             <section>
                 
                 <h1>
-                    Múltiples oídos, una sola verdad <br>
+                    <span>Múltiples oídos, una sola verdad</span><br>
                     Obtén una visión completa de tu música <br>
-                     gracias a las opiniones de nuestra comunidad. <br>
+                    gracias a las opiniones de nuestra comunidad. <br>
                     ¡Desde fans, hasta críticos, <br>
-                     todos tienen algo que decir!
+                    todos tienen algo que decir!
                 </h1>
 
             </section>
         </div>
 
         <!----------- Recientes ----------->
-        <section id="Recientes">
+        <section id="Recientes" class="recientes">
             <h2>Valoradas Recientemente</h2>
 
-            <div>
+            <div class="recientes__tarjetas">
 
                 <!-- Tarjeta 1 -->
                 <div class="tarjeta">
@@ -243,7 +245,9 @@
                 </div>
             </div>
 
-            <button class="button">Mostrar Más</button>
+            <div>
+                <button class="button">Mostrar Más</button>
+            </div>
         </section>
 
         <!----------- Registro ----------->
