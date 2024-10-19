@@ -20,6 +20,22 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    border: solid 3px #1e1e1e;
+    background-color: #EFB810;
+    border-radius: 10px;
+}
+
+::selection {
+    background: #f2f2f2;
+    color: #1e1e1e;
+ }
+
 @font-face {
     font-family: Roboto-Regular;
     src: url(/resources/Fonts/Roboto-Regular.ttf);
