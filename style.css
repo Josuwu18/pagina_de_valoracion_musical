@@ -54,7 +54,7 @@ html {
 header {
     position: fixed;
     top: 0;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent);
     width: 100%;
     padding: 0 30px;
 }
@@ -100,11 +100,8 @@ header nav button {
     background-image: url(/resources/JPG/01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 30px 50px 30px;
-}
-
-.jumbotron section {
-    padding: 100px 0;
+    padding: 250px 30px;
+    background-position: center;
 }
 
 .jumbotron h1 {
@@ -119,7 +116,7 @@ header nav button {
     font-family: Alegreya-Black;
 }
 
-/* -------------------- Recent -------------------- */
+/* -------------------- Recientes -------------------- */
 
 .recientes {
     background-color: #1e1e1e;
@@ -171,4 +168,91 @@ header nav button {
 
 .tarjeta__ranking__estrellas {
     display: flex;
+}
+
+/* -------------------- Registro -------------------- */
+
+.registro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(/resources/JPG/02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    background-position: center;
+}
+
+.registro h3 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: Alegreya-Bold;
+}
+
+.registro__inicio {
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 20px;
+    padding: 5% 10%;
+}
+
+.registro__inicio div {
+    border: solid 2px #f2f2f2;
+    border-radius: 20px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.registro__inicio h4{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Roboto-Bold;
+}
+
+.registro__inicio__btn-registro{
+    font-size: 1.5rem;
+    font-family: Roboto-Bold;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: solid 2px transparent;
+    background-color: #EFB810;
+    color: #0d0d0d;
+}
+
+.registro__inicio__btn-inicio{
+    font-size: 1.5rem;
+    font-family: Roboto-Bold;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: solid 2px #f2f2f2;
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
+.registro__inicio p{
+    font-size: 1rem;
+    text-align: center;
+    font-family: Roboto-Bold;
+}
+
+.registro__inicio__btn-google{
+    font-size: 1.5rem;
+    font-family: Roboto-Bold;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: solid 2px transparent;
+    background-color: #f2f2f2;
+    color: #0d0d0d;
+}
+
+/* -------------------- Footer -------------------- */
+
+footer {
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
 }
