@@ -11,6 +11,12 @@
     color: #f2f2f2;
 }
 
+hr {
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
 a {
     color: unset;
     text-decoration: none;
@@ -216,13 +222,19 @@ header nav button {
     padding: 5% 10%;
 }
 
-.registro__inicio div {
+.registro__inicio__contenedor {
     border: solid 2px #f2f2f2;
     border-radius: 20px;
     padding: 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.registro__inicio__contenedor__o {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .registro__inicio h4{
