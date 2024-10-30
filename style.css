@@ -1,0 +1,290 @@
+* {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Roboto-Regular;
+    margin: unset;
+    padding: unset;
+    border: unset;
+    outline: unset;
+    box-sizing: border-box;
+    list-style: none;
+    color: #f2f2f2;
+}
+
+hr {
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    border: solid 3px #1e1e1e;
+    background-color: #EFB810;
+    border-radius: 10px;
+}
+
+::selection {
+    background: #f2f2f2;
+    color: #1e1e1e;
+ }
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(/resources/Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(/resources/Fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(resources/Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Alegreya-Regular;
+    src: url(/resources/Fonts/Alegreya-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alegreya-Bold;
+    src: url(/resources/Fonts/Alegreya-Bold.ttf);
+}
+
+@font-face {
+    font-family: Alegreya-Black;
+    src: url(/resources/Fonts/Alegreya-Black.ttf);
+}
+
+/* -------------------- Navegador -------------------- */
+header {
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent);
+    width: 100%;
+    padding: 0 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    gap: 100px;
+}
+
+header nav div {
+    display: flex;
+    gap: 20px;
+}
+
+header nav button {
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 20px;
+    border: solid 2px #f2f2f2;
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
+.button {
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 20px;
+    border: solid 2px transparent;
+    background-color: #EFB810;
+    color: #0d0d0d;
+}
+
+/* -------------------- Jumbotron -------------------- */
+
+.jumbotron {
+    background-image: url(/resources/JPG/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron div {
+    padding: 250px 30px;
+    background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.75), transparent);
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    text-align: end;
+    font-family: Alegreya-Bold;
+}
+
+.jumbotron h1 span{
+    font-size: 3.5rem;
+    text-align: end;
+    font-family: Alegreya-Black;
+}
+
+/* -------------------- Recientes -------------------- */
+
+.recientes {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 50px 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.recientes h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.recientes__tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #141414;
+    border-radius: 12px;
+    align-items: center;
+    padding: 40px;
+}
+
+.tarjeta img {
+    border-radius: 20px;
+}
+
+.tarjeta__info h4 {
+    font-size: 18px;
+}
+
+.tarjeta__info p {
+    font-size: 12px;
+}
+
+.tarjeta__ranking {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarjeta__ranking__estrellas {
+    display: flex;
+}
+
+/* -------------------- Registro -------------------- */
+
+.registro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(/resources/JPG/02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    background-position: center;
+}
+
+.registro h3 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: Alegreya-Bold;
+}
+
+.registro__inicio {
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 20px;
+    padding: 5% 10%;
+}
+
+.registro__inicio__contenedor {
+    border: solid 2px #f2f2f2;
+    border-radius: 20px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.registro__inicio__contenedor__o {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.registro__inicio h4{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Roboto-Bold;
+}
+
+.registro__inicio__btn-registro{
+    font-size: 1.5rem;
+    font-family: Roboto-Bold;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: solid 2px transparent;
+    background-color: #EFB810;
+    color: #0d0d0d;
+}
+
+.registro__inicio__btn-inicio{
+    font-size: 1.5rem;
+    font-family: Roboto-Bold;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: solid 2px #f2f2f2;
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
+.registro__inicio p{
+    font-size: 1rem;
+    text-align: center;
+    font-family: Roboto-Bold;
+}
+
+.registro__inicio__btn-google{
+    font-size: 1.5rem;
+    font-family: Roboto-Bold;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: solid 2px transparent;
+    background-color: #f2f2f2;
+    color: #0d0d0d;
+}
+
+/* -------------------- Footer -------------------- */
+
+footer {
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
